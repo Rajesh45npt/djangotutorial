@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>User Info</title>
+    
+</head>
+<body>
+   <!--  <h1><strong>Here are your users:</strong></h1>
+    {% if userinfo %}
+    
+    <ol>
+        {% for user in userinfo%}
+        <li>UserInfo</li>
+        <ul>
+            <li>First Name:{{user.first_name}}</li>
+            <li>Last Name:{{user.last_name}}</li>
+            <li>Email Name:{{user.email}}</li>
+
+        </ul>
+        {% endfor %}
+
+    </ol>
+    {% else %}
+    <p> NO USER INFORMATION FOUND</p>
+    {%  endif %} -->
+
+    <div class="container">
+        <h1> Please sign up here!</h1>
+        <form method="POST">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" class='btn btn primary' value="Submit">
+        </form>
+
+    </div>
+</body>
+</html>
+<li> </li>
